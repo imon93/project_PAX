@@ -1,0 +1,92 @@
+
+@media (min-width: 1400px) {}
+
+@media (min-width: 1200px) and (max-width: 1399px) {}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .hero_icon {
+        top: 570px;
+        left: 43%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .hero_icon {
+        top: 520px;
+        left: 43%;
+        padding: 8px 16px;
+    }
+
+    .swiper-button-next {
+        right: 40px;
+        top: 200px;
+    }
+    
+    .swiper-button-prev {
+        left: 40px;
+        top: 200px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .hero_con h2 {
+        font-size: 57px;
+    }
+
+    .hero_con h6 {
+        font-size: 30px;
+    }
+
+    .hero_icon {
+        top: 495px;
+        left: 40%;
+        padding: 8px 14px;
+    }
+
+    .swiper-button-next {
+        right: 40px;
+        top: 230px;
+    }
+    
+    .swiper-button-prev {
+        left: 40px;
+        top: 230px;
+    }
+}
+
+@media (max-width: 575px) {
+    .hero_con h2 {
+        font-size: 48px;
+    }
+
+    .hero_con h6 {
+        font-size: 26px;
+        margin-top: 8px;
+    }
+    
+    .hero_icon {
+        top: 510px;
+        left: 32%;
+        padding: 6px 12px;
+    }
+
+    .work_heading h2 {
+        font-size: 43px;
+        padding: 0 12px;
+    }
+    
+    .work_heading h6 {
+        font-size: 20px;
+        padding: 0 10px;
+    }
+
+    .swiper-button-next {
+        right: 30px;
+        top: 300px;
+    }
+    
+    .swiper-button-prev {
+        left: 30px;
+        top: 300px;
+    }
+}
