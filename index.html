@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PAX-Page</title>
     <!-- PAX_Icon -->
+     <link rel="icon" href="assets/img/icon.png">
 
     <!-- CSS LINK -->
      <link rel="stylesheet" href="assets/css/all.min.css">
@@ -17,16 +18,23 @@
 </head>
 <body>
     <!-- PRELOADER AREA END -->
+     <div class="center">
+      <div class="spiner"></div>
+      <span>loading...</span>
+     </div>
     <!-- PRELOADER AREA -->
 
 
     <!-- BACK TO TOP BTN -->
+     <button class="back_to_top btn btn-primary">
+      <i class="fa-solid fa-chevron-up"></i>
+     </button>
     <!-- BACK TO TOP BTN END -->
 
 
     <!-- MENU AREA -->
-     <header class="header_part">
-        <nav class="navbar navbar-expand-lg bg-body-light">
+     <!-- <header class="header_part"> -->
+        <nav class="navbar navbar-expand-lg">
             <div class="container">
               <a class="navbar-brand" href="#">
                 <img src="assets/img/logo.png" alt="LOGO" class="img-fluid w-100">
@@ -67,7 +75,7 @@
               </div>
             </div>
         </nav>
-     </header>
+     <!-- </header> -->
     <!-- MENU AREA END -->
 
 
@@ -102,7 +110,7 @@
 
 
     <!-- SERVICE AREA -->
-     <setion class="service_area">
+     <setion class="service_area" id="about us">
       <div class="container">
         <div class="service_con_main">
           <div class="row">
@@ -172,7 +180,7 @@
 
 
     <!-- WORK AREA -->
-     <section class="work_area">
+     <section class="work_area" id="portfolio">
       <div class="container">
         <div class="work_con_main text-center text-white">
           <div class="work_heading mb-5">
@@ -271,6 +279,74 @@
     <!-- OPINION AREA END -->
 
 
+    <!-- TEAM AREA -->
+     <section class="team_area" id="our team">
+      <div class="container">
+        <div class="team_con_main text-center">
+          <div class="team_heading">
+            <h2>Meet our team</h2>
+            <h6>We are the best!</h6>
+          </div>
+
+          <div class="filter_btn_area d-flex justify-content-center gap-4 my-4 mx-auto text-center">
+            <button class="btn btn-primary" data-filter="all">All</button>
+            <button class="btn btn-primary" data-filter=".cyberSecurity">Cyber Security</button>
+            <button class="btn btn-primary" data-filter=".apps">Apps</button>
+            <button class="btn btn-primary" data-filter=".webDesigner">Web Designer</button>
+            <button class="btn btn-primary" data-filter=".webDeveloper">Web Developer</button>
+          </div>
+
+          <div class="row gy-4 mixitup">
+            <div class="col-lg-3 col-sm-6 mix cyberSecurity mx-auto">
+              <div class="team_con">
+                <div class="team_img">
+                  <img src="assets/img/TEAM/team_01.png" alt="Person" class="img-fluid w-100">
+                </div>
+                <h4>Lorem ipsum</h4>
+                <p>Cras vel eleifend nisl, ac efficitur purus. Vestibulum vestibulum aliquam lectusmattis ac.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6 mix apps">
+              <div class="team_con">
+                <div class="team_img">
+                  <img src="assets/img/TEAM/team_02.png" alt="Person" class="img-fluid w-100">
+                </div>
+                <h4>Aenean eget</h4>
+                <p>Donec sagittis accumsan diam, eu efficitur nunc lobortis eget. Pellentesque posuere.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6 mix webDesigner mx-auto">
+              <div class="team_con">
+                <div class="team_img">
+                  <img src="assets/img/TEAM/team_03.png" alt="Person" class="img-fluid w-100">
+                </div>
+                <h4>Nulla felis quam</h4>
+                <p>Nulla felis quam, malesuada quis tincidunt vitae, iaculis id massa. Mauris pellentesque.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6 mix webDeveloper">
+              <div class="team_con">
+                <div class="team_img">
+                  <img src="assets/img/TEAM/team_04.png" alt="Person" class="img-fluid w-100">
+                </div>
+                <h4>Mauris</h4>
+                <p>Pellentesque posuere nisl a posuere mattis. Quisque nuet congue at, variuse. </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="team_btn">
+            <a href="#" class="btn button team-btn">Ask for price</a>
+          </div>
+        </div>
+      </div>
+     </section>
+    <!-- TEAM AREA END -->
+
+
     <!-- MAP AREA -->
      <section class="map_area">
       <div class="map_content">
@@ -278,9 +354,89 @@
       </div>
      </section>
     <!-- MAP AREA END -->
+    
+    
+    <!-- FOOTER AREA -->
+     <footer class="footer_area" id="contact">
+      <div class="footer_link">
+        <div class="container">
+          <div class="footer_link_con_main text-white">
+            <div class="row gy-5">
+              <div class="col-lg-3 col-sm-6">
+                <div class="footer_link_con text-white text-sm-start text-center">
+                  <ul>
+                    <li><a href="#">Ad litora torquent</a></li>
+                    <li><a href="#">Per conubia</a></li>
+                    <li><a href="#">Nostra</a></li>
+                    <li><a href="#">Per inceptos</a></li>
+                    <li><a href="#">Himenaeos</a></li>
+                    <li><a href="#">In consectetur</a></li>
+                    <li><a href="#">Nisi sed blandit</a></li>
+                    <li><a href="#">Tincidunt</a></li>
+                  </ul>
+                </div>
+              </div>
 
+              <div class="col-lg-3 col-sm-6">
+                <div class="footer_link_con text-white text-sm-start text-center">
+                  <ul>
+                    <li><a href="#">Class aptent</a></li>
+                    <li><a href="#">Taciti sociosqu</a></li>
+                    <li><a href="#">Ad litora torquent</a></li>
+                    <li><a href="#">Per conubia</a></li>
+                    <li><a href="#">Nostra</a></li>
+                    <li><a href="#">Per inceptos</a></li>
+                    <li><a href="#">Himenaeos</a></li>
+                    <li><a href="#">In consectetur</a></li>
+                    <li><a href="#">Nisi sed blandit</a></li>
+                    <li><a href="#">Tincidunt</a></li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="col-lg-3 col-sm-6">
+                <div class="footer_link_con text-white text-sm-start text-center">
+                  <ul>
+                    <li><a href="#">Taciti sociosqu</a></li>
+                    <li><a href="#">Ad litora torquent</a></li>
+                    <li><a href="#">Per conubia</a></li>
+                    <li><a href="#">Nostra</a></li>
+                    <li><a href="#">Per inceptos</a></li>
+                    <li><a href="#">Himenaeos</a></li>
+                    <li><a href="#">In consectetur</a></li>
+                    <li><a href="#">Nisi sed blandit</a></li>
+                    <li><a href="#">Tincidunt</a></li>
+                  </ul>
+                </div>
+              </div>
 
+              <div class="col-lg-3 col-sm-6">
+                <div class="footer_link_con text-white text-sm-start text-center">
+                  <ul>
+                    <li><a href="#">Per conubia</a></li>
+                    <li><a href="#">Nostra</a></li>
+                    <li><a href="#">Per inceptos</a></li>
+                    <li><a href="#">Himenaeos</a></li>
+                    <li><a href="#">In consectetur</a></li>
+                    <li><a href="#">Nisi sed blandit</a></li>
+                    <li><a href="#">Tincidunt</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <div class="main_footer">
+        <div class="end_footer text-center text-light">
+          <p>Copyright &copy; 2024. All rights reserved by PAX. Designed By<a href="#" target="_blank">IMON</a></p>
+        </div>
+      </div>
+     </footer>
+    <!-- FOOTER AREA END -->
+
+    
     <!-- JS LINK -->
      <script src="assets/js/bootstrap.bundle.min.js"></script>
      <script src="assets/js/jquery-1.12.4.min.js"></script>

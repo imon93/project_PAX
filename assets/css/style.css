@@ -85,11 +85,100 @@ body {
 /* =============== ========= */
 
 /* PRELOADER AREA */
+.center {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background: var(--primary_color);
+    z-index: 90;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: progress;
+}
+
+.spiner {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    animation: spiner 3s linear infinite;
+}
+  
+@keyframes spiner {
+    0% {
+      transform: rotate(0deg);
+      box-shadow: 1px 5px 2px #72BF78;
+    }
+  
+    50% {
+      transform: rotate(180deg);
+      box-shadow: 1px 5px 2px #A0D683;
+    }
+  
+    100% {
+      transform: rotate(360deg);
+      box-shadow: 1px 5px 2px #D3EE98;
+    }
+}
+  
+.spiner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(255,255,255,0.3);
+}
+  
+span {
+    font-size: 22px;
+    color: #77E4C8;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 200px;
+    animation: text 4s ease-in-out infinite;
+}
+  
+@keyframes text {
+    50% {
+        color: #D24545;
+        transform: rotateX(-90deg);
+    }
+}
 /* PRELOADER AREA END */
 
 /* =============== ========= */
 
 /* BACK TO TOP BTN */
+.back_to_top {
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+    z-index: 20;
+    border-radius: 50%;
+    background: var(--third_color);
+    display: none;
+    animation: btt 0.8s ease-in;
+}
+
+.back_to_top:hover {
+    background: var(--p_color);
+}
+
+@keyframes btt {
+    from {
+        transform: translateY(100px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
 /* BACK TO TOP BTN END */
 
 /* =============== ========= */
@@ -99,7 +188,8 @@ body {
     position: sticky;
     top: 0;
     z-index: 5;
-    transition: 0.6s;
+    background: white;
+    transition: 0.5s;
 }
 
 .navbar-nav .nav-item .nav-link {
@@ -115,9 +205,32 @@ body {
 }
 
 .navbar-nav .nav-item .nav-link:hover {
-    color: #fff;
-    background: var(--secondary_color);
+    /* color: #fff;
+    background: var(--secondary_color); */
     border: 2px solid var(--border_color);
+}
+
+.third_color {
+    background: var(--third_color);
+    animation: bgDown 0.5s ease-out;
+}
+
+@keyframes bgDown {
+    from {
+        transform: translateY(-100px);
+    }
+
+    to {
+        transform: translateY(0px);
+    }
+}
+
+.third_color .nav-link {
+    color: #fff;
+}
+
+.third_color .nav-link:hover {
+    color: var(--third_color);
 }
 
 .navbar-nav .nav-item .nav-icon {
@@ -152,6 +265,20 @@ body {
 
 .nav-icon2:hover {
     background: #28aae1 !important;
+}
+
+.primary_color {
+    background: var(--third_color);
+    animation: bgDown 0.7s ease-out;
+}
+
+@keyframes bgDown {
+    /* 0% / */ from { 
+        transform: translateY(-100px);
+    }
+    /* 100% / */ to {
+        transform: translateY(0px);
+    }
 }
 /* MENU AREA END */
 
@@ -376,6 +503,77 @@ body {
 /* OPINION AREA END */
 
 /* =============== ========= */
+
+/* TEAM AREA */
+.team_area {
+    padding: 64px 0;
+    background: #edeff1;
+}
+
+.team_heading h2 {
+    font-size: 54px;
+    font-weight: bold;
+    color: var(--primary_color);
+}
+
+.team_heading h6 {
+    font-size: 28px;
+    font-weight: lighter;
+    color: var(--p_color);
+}
+
+.team_img img {
+    height: auto;
+    width: 112px !important;
+    padding: 28px 0 32px;
+}
+
+.team_con h4 {
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--secondary_color);
+    margin: 0 0 16px;
+}
+
+.team_con p {
+    font-size: 18px;
+    font-weight: lighter;
+    line-height: 1.5;
+    color: var(--p_color);
+    padding: 0 5px;
+}
+
+.team_btn a {
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 50px;
+    color: #fff;
+    background: #ff2d55;
+    margin: 58px 0 18px;
+    padding: 10px 40px;
+    transition: 0.5s;
+}
+
+.team_btn a:hover {
+    color: #fff;
+    background: var(--third_color);
+}
+
+.filter_btn_area .btn {
+    color: #fff;
+    background: var(--third_color);
+    border: 0px;
+    border-radius: 50px;
+    padding: 10px 20px;
+    transition: 0.5s;
+}
+
+.filter_btn_area .btn:hover {
+    background: var(--border_color);
+    color: #fff;
+}
+/* TEAM AREA END */
+
 /* =============== ========= */
 
 /* MAP AREA */
@@ -385,55 +583,49 @@ body {
 /* MAP AREA END */
 
 /* =============== ========= */
-/* =============== ========= */
-/* =============== ========= */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-h2 {
-    margin: 0;
-    padding: 0;
-    font-size: 3.65rem;
-    font-weight: 700;
-}
-.sub_heading {
-    font-size: 1.5rem;
-    line-height: 1.3rem;
-    font-weight: 300;
+/* FOOTER AREA */
+.footer_area {
+    padding: 64px 0 36px;
+    background: var(--primary_color);
 }
 
-.button {
-    font-size: 1.1rem;
-    font-weight: 600;
-    padding: 0.60rem 2.75rem;
-    border-radius: 1.9rem;
-    border: none;
-    transition: 0.4s;
-} */
+.footer_link_con ul li {
+    margin: 6px 0;
+    padding: 0px 30px;
+}
+
+.footer_link_con ul li a {
+    font-size: 18px;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.footer_link_con ul li a:hover {
+    color: var(--third_color);
+}
+
+.end_footer {
+    padding-top: 70px;
+}
+
+.end_footer p {
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.end_footer a {
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 7px;
+    color: #ffff;
+    transition: 0.5s;
+}
+
+.end_footer a:hover {
+    color: var(--third_color);
+}
+/* FOOTER AREA END */
+
+/* =============== ========= */
+/* =============== ========= */
